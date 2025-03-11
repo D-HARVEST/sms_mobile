@@ -10,8 +10,9 @@ plugins {
 
 dependencies {
      implementation(platform("com.google.firebase:firebase-bom:32.2.0"))
-    implementation("com.google.firebase:firebase-messaging-ktx")
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.3")
+     implementation("com.google.firebase:firebase-messaging-ktx")
+     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.3")
+     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.0")
 }
 
 

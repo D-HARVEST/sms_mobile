@@ -5,8 +5,13 @@ buildscript {
         google()
         mavenCentral()
     }
+    
+
     dependencies {
-        classpath("com.google.gms:google-services:4.3.10") // Mets à jour si nécessaire
+        classpath("com.google.gms:google-services:4.3.10") 
+        classpath("com.android.tools.build:gradle:8.1.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0") 
+
     }
 }
 
