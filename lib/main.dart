@@ -28,9 +28,12 @@ Future<void> backgroundMessageHandler(RemoteMessage message) async {
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+ 
+  // Enregistrer d'abord la fonction de gestion des messages en arrière-plan
+  FirebaseMessaging.onBackgroundMessage(backgroundMessageHandler);
+
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  FirebaseMessaging.onBackgroundMessage(backgroundMessageHandler);
 
   // Configuration des notifications locales
   setupFlutterNotifications();

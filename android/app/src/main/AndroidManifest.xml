@@ -8,6 +8,7 @@
     <application
         android:label="sms_mobile_api"
         android:name="${applicationName}"
+        android:value="high_importance_channel"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
